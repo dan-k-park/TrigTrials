@@ -1,6 +1,6 @@
 class Card {
-  constructor(level) {
-    this.level = level
+  constructor(round) {
+    this.round = round
   }
 
  

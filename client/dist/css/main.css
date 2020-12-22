@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  size: 80%;
 }
 
 p {
@@ -26,9 +27,21 @@ ul {
 }
 
 #menu-buttons {
-  margin: auto
+  margin: auto;
 }
 
 .hidden {
   display: none;
 }
+
+.enemy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.enemy_slot img {
+  width: 80%;
+}
+/*# sourceMappingURL=main.css.map */

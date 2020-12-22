@@ -1,0 +1,48 @@
+body {
+  padding-top: 5rem;
+  background-image: url("../assets/Background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  size: 80%
+}
+
+p {
+  font-size: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#game-container {
+  background-image: url("../assets/Background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 85%;
+  height: 80vh;
+}
+
+#menu-buttons {
+  margin: auto
+}
+
+.hidden {
+  display: none;
+}
+
+.enemy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &_slot {
+    img {
+      width: 80%;
+    }
+  }
+}

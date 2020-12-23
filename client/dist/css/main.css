@@ -41,7 +41,18 @@ ul {
   justify-content: space-evenly;
 }
 
-.enemy_slot img {
+.enemy_slot {
   width: 80%;
+  height: 80%;
+}
+
+.enemy_slot img {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enemy_stats h3 {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

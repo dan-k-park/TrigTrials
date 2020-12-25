@@ -14,6 +14,14 @@ p {
   font-size: 0.5rem;
 }
 
+h5 {
+  color: $stat-color;
+}
+
+h6 {
+  color: $stat-color;
+}
+
 ul {
   list-style: none;
 }
@@ -47,13 +55,62 @@ ul {
     height: 80%;
     img {
       width: 45%;
-      margin-left: auto;
-  margin-right: auto;
+      height: 45%;
     }
   }
   &_stats {
-    h3 {
-      color: $stat-color;
-    }
+    margin-top: 10%;
   }
 }
+
+#game-div {
+  padding-top: 5%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-evenly;
+}
+
+
+.card {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 50%;
+  hr {
+    color: $stat-color
+  }
+  &:hover {
+    transition: all .2s ease-in-out;
+  }
+}
+
+.block-card {
+  background-color: #a4bcbd!important;
+}
+
+.thorns-card {
+  background-color: #fff200!important;
+}
+
+.poison-card {
+  background-color: #a217ff!important;
+}
+
+.attack-card {
+  background-color: #ff9d87!important;
+}
+
+.healing-card {
+  background-color: #8aff8e!important;
+}
+
+.player-area {
+  padding-top: 20%;
+}
+
+.player-deck {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+}
+
+

@@ -15,117 +15,121 @@
 </head>
 
 <body>
-  <div class="container-fluid d-flex align-items-center justify-content-center" id="menu-buttons">
+  <div class="container-fluid" id="menu-buttons">
     <div class="d-grid gap-2 col-3 mx-auto">
       <button class="btn btn-primary" type="button" id="play">Play</button>
       <button class="btn btn-primary" type="button" id="instructions">Instructions</button>
       <button class="btn btn-primary" type="button" id="leaderboard">Leaderboard</button>
     </div>
   </div>
-  <div class="hidden" id="game-div"> 
+  <div class="hidden" id="game-div">
     <div class="enemy">
       <div class="enemy_slot">
         <img src='assets/Enraged-Enemy.png'>
         <div class="enemy_stats">
-          <h3>Health: 10/10</h3>
+          <h6>Health: 10/10</h6>
         </div>
       </div>
       <div class="enemy_slot">
         <img src='assets/Thorn-Enemy.png'>
         <div class="enemy_stats">
-          <h3>Health: 10/10</h3>
-        </div>      </div>
+          <h6>Health: 10/10</h6>
+        </div>
+      </div>
       <div class="enemy_slot">
         <img src='assets/Block-Enemy.png'>
         <div class="enemy_stats">
-          <h3>Health: 10/10</h3>
-        </div>      </div>
+          <h6>Health: 10/10</h6>
+        </div>
+      </div>
       <div class="enemy_slot">
         <img src='assets/Healing-Enemy.png'>
         <div class="enemy_stats">
-          <h3>Health: 10/10</h3>
-        </div>      </div>
+          <h6>Health: 10/10</h6>
+        </div>
+      </div>
       <div class="enemy_slot">
         <img src='assets/Strong-Enemy.png'>
         <div class="enemy_stats">
-          <h3>Health: 10/10</h3>
-        </div>      </div>
-    </div>
-  
-
-
-    <div class="row row-cols-1 row-cols-md-5 gy-4" id="player-controls">
-      <div class="col">
-        <div class="card">
-          <div class="card-body" id="player-health">
-            Health: 100
-          </div>
+          <h6>Health: 10/10</h6>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body" id="player-thorns">
-            Thorns: 0
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body" id="player-defense">
-            Defense: 0
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-primary" id="attack-btn">Attack</button>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-primary" id="draw-btn">Draw</button>
-
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-5 gy-4" id="player-deck">
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body" id="card-slot-1">
-            
-           </div>
-        </div>
-      </div>      
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body" id="card-slot-2">
-              
-           </div>
-        </div>
-      </div>      
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body" id="card-slot-3">
-           
-           </div>
-        </div>
-      </div>      
-      <div class="col">
-        <div class="card h-100">
+
+    <div class="row player-area">
+      <div class="col-lg-8 player-deck">
+        <div class="card h-100 bg-gradient block-card">
           <div class="card-body" id="card-slot-4">
-             
-           </div>
+            <div class="card-info">
+              <h6>Damage 2</h6>
+              <h6>Energy 3</h6>
+            </div>
+            <hr />
+            <div class="card-ability">
+              <h6>Block</6>
+            </div>
+          </div>
         </div>
-      </div>      
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body" id="card-slot-5">
-            
-           </div>
+        <div class="card h-100 bg-gradient bg-secondary">
+          <div class="card-body" id="card-slot-4">
+            <div class="card-info">
+              <h6>Damage 2</h6>
+              <h6>Energy 3</h6>
+            </div>
+            <hr />
+            <div class="card-ability">
+              <h6>Block</6>
+            </div>
+          </div>
         </div>
-      </div>      
+        <div class="card h-100 bg-gradient bg-secondary">
+          <div class="card-body" id="card-slot-4">
+            <div class="card-info">
+              <h6>Damage 2</h6>
+              <h6>Energy 3</h6>
+            </div>
+            <hr />
+            <div class="card-ability">
+              <h6>Block</6>
+            </div>
+          </div>
+        </div>
+        <div class="card h-100 bg-gradient bg-secondary">
+          <div class="card-body" id="card-slot-4">
+            <div class="card-info">
+              <h6>Damage 2</h6>
+              <h6>Energy 3</h6>
+            </div>
+            <hr />
+            <div class="card-ability">
+              <h6>Block</6>
+            </div>
+          </div>
+        </div>
+        <div class="card h-100 bg-gradient bg-secondary">
+          <div class="card-body" id="card-slot-4">
+            <div class="card-info">
+              <h6>Damage 2</h6>
+              <h6>Energy 3</h6>
+            </div>
+            <hr />
+            <div class="card-ability">
+              <h6>Block</6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="player-stats">
+          <h5>Health</h5>
+          <h5>Energy</h5>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

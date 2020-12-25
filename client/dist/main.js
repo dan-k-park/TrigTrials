@@ -3,6 +3,7 @@ const create = (element) => document.createElement(element)
 
 const currentRound = 1;
 const health = 100;
+const poison = 0;
 
 const enemies = []
 const deck = []
